@@ -17,7 +17,7 @@ O projeto será um Gerenciador de Tarefas de Metodologia Ágil com Método Kanba
 
 ## Diagrama de Classes
 
-![diagrama de classes]()
+![diagrama de classes](https://github.com/Raymendesc/Projeto_LP1_UND2/blob/main/docs/Diagrama%20Classes.png)
 
 
 ## Diagrama de Caso de Uso
