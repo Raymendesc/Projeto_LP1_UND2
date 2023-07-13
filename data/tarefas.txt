@@ -1,0 +1,5 @@
+Projeto LP1,Tarefa Urgente,13/07/2023
+Reunião com Isabel Dillmann,Tarefa Importante,17/08/2023
+Prova de Probabilidade,Tarefa Importante,17/07/2023
+Curso de Java,Tarefa Básica,23/08/2023
+
