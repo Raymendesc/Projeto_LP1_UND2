@@ -26,4 +26,4 @@ Ao adicionar uma atividade no gerenciador e colocar suas informações (Descriç
 
 
 ## Diagrama de Caso de Uso
-![Caso de Uso UML](https://github.com/Raymendesc/Projeto_LP1_UND2/blob/main/docs/Diagrama%20Caso%20de%20Uso.png)
+![Caso de Uso UML](https://github.com/Raymendesc/Projeto_LP1_UND2/blob/main/docs/DiagramCasosdeUso.png)
