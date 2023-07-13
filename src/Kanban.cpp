@@ -1,3 +1,8 @@
+/**
+ * @file Kanban.cpp
+ *
+ * @brief Este arquivo contém a implementação dos métodos da classe Kanban.
+ */
 #include <iostream>
 #include <string>
 #include <vector>
