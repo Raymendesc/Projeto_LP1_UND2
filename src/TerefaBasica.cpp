@@ -1,3 +1,8 @@
+/**
+ * @file TarefaBasica.cpp
+ *
+ * @brief Este arquivo contém a implementação dos métodos da classe TarefaBasica.
+ */
 #include <iostream>
 #include <string>
 #include <vector>
