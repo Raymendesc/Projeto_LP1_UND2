@@ -1,19 +1,24 @@
 # Projeto_LP1_UND2
 Repositório do projeto da disciplina de Linguagem de Programação I
-# Projeto Quadro Kaban
+# Projeto Quadro Kanban
 O projeto será um Gerenciador de Tarefas de Metodologia Ágil com Método Kanban, ele adiciona tarefas, define prioridades, agenda datas e classifica as tarefas.
 
 ### Detalhes tecnicos sobre o Projeto
 
 #### Sobre o TADS
-- As tarefas serão amarzenadas por colunas (quadro kaban) em uma lista duplamente encadeada.
-- Para armazenar as tarefas que estão em espera e serão atribuídas ao desenvolvedor (Pessoa que irá executar a tarefa) usaremos uma fila. 
-
+- As tarefas serão amarzenadas por Status (Backlog, Em Análise, Fazendo, Testando e Entregue (quadro kanban)) em uma lista encadeada. E serão exibidas na função "Exibir Quadro Kanban".
+ 
 #### Busca
-- Para a busca binária, vamos implementá-la em uma lista ordenada de tarefas (a decidir: data_de_entrega, prioridade, status). Isso permitiria encontrar rapidamente uma tarefa específica.
+- A busca binária foi implementada na  função de "Encontrar Tarefa", presente no gerenciador, que ao digitar a tarefa que está procurando, ela informa qual a prioridade da tarefa (Básica, Importante, Urgente) e sua Data de Entrega.
 
 #### Ordenação
-- Para ordenar as tarefas que precisam ser realizadas por prioridade usaremos o Quick sort e para agendar as tarefas que serão feitas por data de entrega, usaremos Merge Sort.  
+A ordenação foi implementada da seguinte maneira:
+- Merge Sort por Data de Entrega da Tarefa;
+- Quick Sort Por Ordem Alfabética;
+- Heap Sort por Prioridade.
+
+#### Manipulação de Arquivos
+Ao adicionar uma atividade no gerenciador e colocar suas informações (Descrição (Nome), Prioridade e Data de Entrega, um arquivo. txt é gerado e adicionado, salvando todas essas informações geradas pelo usuário. 
 
 ## Diagrama de Classes
 
