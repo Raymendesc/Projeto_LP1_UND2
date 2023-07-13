@@ -1,4 +1,4 @@
-# Projeto_LP1_UND2
+# Projeto_LP1_UND3
 Repositório do projeto da disciplina de Linguagem de Programação I
 # Projeto Quadro Kanban
 O projeto será um Gerenciador de Tarefas de Metodologia Ágil com Método Kanban, ele adiciona tarefas, define prioridades, agenda datas e classifica as tarefas.
