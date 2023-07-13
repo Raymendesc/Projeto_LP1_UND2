@@ -36,7 +36,7 @@ Kanban::Kanban() {
 void Kanban::adicionarTarefa(Tarefa* tarefa) {
     quadroKanban["Backlog"].push_back(tarefa);
     std::ofstream arquivo;
-    arquivo.open("tarefas.txt", std::ios::app);
+    arquivo.open("data/tarefas.txt", std::ios::app);
     if (arquivo.is_open()) {
         std::string texto = tarefa->getDescricao() + "," + tarefa->getTipo() + "," + tarefa->getDataEntrega() + "\n";
         arquivo << texto;
