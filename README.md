@@ -22,7 +22,7 @@ Ao adicionar uma atividade no gerenciador e colocar suas informações (Descriç
 
 ## Diagrama de Classes
 
-![diagrama de classes](https://github.com/Raymendesc/Projeto_LP1_UND2/blob/main/docs/Diagrama%20Classes.png)
+![diagrama de classes](https://github.com/Raymendesc/Projeto_LP1_UND2/blob/main/docs/DiagramdeClasses.png)
 
 
 ## Diagrama de Caso de Uso
