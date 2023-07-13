@@ -1,3 +1,8 @@
+/**
+ * @file Menu.cpp
+ *
+ * @brief Este arquivo contém a implementação da classe Menu, responsável por gerenciar as opções do programa.
+ */
 #include <iostream>
 #include <string>
 #include <vector>
