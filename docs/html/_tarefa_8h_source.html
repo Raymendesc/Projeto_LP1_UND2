@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projeto de LP1 - Kanban (SimplifyMe): Código-Fonte de Projeto de LP1 (SimplifyMe)/Tarefa.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="Logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">Projeto de LP1 - Kanban (SimplifyMe)<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">O projeto será um Gerenciador de Tarefas de Metodologia Ágil com Método Kanban, ele adiciona tarefas, define prioridades, agenda datas e classifica as tarefas.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhum resultado encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_322ed11d3e6d5bab4e4d888af5401ae4.html">Projeto de LP1 (SimplifyMe)</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">Tarefa.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_tarefa_8h.html">Vá para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef TAREFA_H</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#define TAREFA_H</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_tarefa.html">   14</a></span><span class="keyword">class </span><a class="code hl_class" href="class_tarefa.html">Tarefa</a> {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <a class="code hl_class" href="class_tarefa.html">Tarefa</a>(<span class="keyword">const</span> std::string&amp; descricao, <span class="keyword">const</span> std::string&amp; dataEntrega);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="class_tarefa.html#af528a1d8b609a5f4d4b54db9b4308199">   26</a></span>    <span class="keyword">virtual</span> <a class="code hl_function" href="class_tarefa.html#af528a1d8b609a5f4d4b54db9b4308199">~Tarefa</a>() {}</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    std::string <a class="code hl_function" href="class_tarefa.html#a55ac0323625949d76b2bf98cec73f6e1">getDescricao</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    std::string <a class="code hl_function" href="class_tarefa.html#a19b40a27d9f8bc5ed103be6056deedcb">getDataEntrega</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="class_tarefa.html#a49dbdb2d78557d5b5fece7f90ff924da">   45</a></span>    <span class="keyword">virtual</span> std::string <a class="code hl_function" href="class_tarefa.html#a49dbdb2d78557d5b5fece7f90ff924da">getTipo</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="class_tarefa.html#aebc3637e99544f4f64a2b6f45facb160">   52</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_tarefa.html#aebc3637e99544f4f64a2b6f45facb160">atualizarStatus</a>(<span class="keyword">const</span> std::string&amp; novoStatus) = 0;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    std::string descricao; </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    std::string dataEntrega; </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>};</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclass_tarefa_html"><div class="ttname"><a href="class_tarefa.html">Tarefa</a></div><div class="ttdoc">Classe base que representa uma tarefa.</div><div class="ttdef"><b>Definition:</b> Tarefa.h:14</div></div>
+<div class="ttc" id="aclass_tarefa_html_a19b40a27d9f8bc5ed103be6056deedcb"><div class="ttname"><a href="class_tarefa.html#a19b40a27d9f8bc5ed103be6056deedcb">Tarefa::getDataEntrega</a></div><div class="ttdeci">std::string getDataEntrega() const</div><div class="ttdoc">Obtém a data de entrega da tarefa.</div><div class="ttdef"><b>Definition:</b> Tarefa.cpp:35</div></div>
+<div class="ttc" id="aclass_tarefa_html_a49dbdb2d78557d5b5fece7f90ff924da"><div class="ttname"><a href="class_tarefa.html#a49dbdb2d78557d5b5fece7f90ff924da">Tarefa::getTipo</a></div><div class="ttdeci">virtual std::string getTipo() const =0</div><div class="ttdoc">Obtém o tipo da tarefa.</div></div>
+<div class="ttc" id="aclass_tarefa_html_a55ac0323625949d76b2bf98cec73f6e1"><div class="ttname"><a href="class_tarefa.html#a55ac0323625949d76b2bf98cec73f6e1">Tarefa::getDescricao</a></div><div class="ttdeci">std::string getDescricao() const</div><div class="ttdoc">Obtém a descrição da tarefa.</div><div class="ttdef"><b>Definition:</b> Tarefa.cpp:27</div></div>
+<div class="ttc" id="aclass_tarefa_html_aebc3637e99544f4f64a2b6f45facb160"><div class="ttname"><a href="class_tarefa.html#aebc3637e99544f4f64a2b6f45facb160">Tarefa::atualizarStatus</a></div><div class="ttdeci">virtual void atualizarStatus(const std::string &amp;novoStatus)=0</div><div class="ttdoc">Atualiza o status da tarefa.</div></div>
+<div class="ttc" id="aclass_tarefa_html_af528a1d8b609a5f4d4b54db9b4308199"><div class="ttname"><a href="class_tarefa.html#af528a1d8b609a5f4d4b54db9b4308199">Tarefa::~Tarefa</a></div><div class="ttdeci">virtual ~Tarefa()</div><div class="ttdoc">Destrutor virtual da classe Tarefa.</div><div class="ttdef"><b>Definition:</b> Tarefa.h:26</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projeto de LP1 - Kanban (SimplifyMe): Código-Fonte de Projeto de LP1 (SimplifyMe)/Kanban.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="Logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">Projeto de LP1 - Kanban (SimplifyMe)<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">O projeto será um Gerenciador de Tarefas de Metodologia Ágil com Método Kanban, ele adiciona tarefas, define prioridades, agenda datas e classifica as tarefas.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhum resultado encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_322ed11d3e6d5bab4e4d888af5401ae4.html">Projeto de LP1 (SimplifyMe)</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">Kanban.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_kanban_8h.html">Vá para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef KANBAN_H</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#define KANBAN_H</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="_tarefa_8h.html">Tarefa.h</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="_tarefa_basica_8h.html">TarefaBasica.h</a>&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="_tarefa_importante_8h.html">TarefaImportante.h</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="_tarefa_urgente_8h.html">TarefaUrgente.h</a>&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;map&gt;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_kanban.html">   22</a></span><span class="keyword">class </span><a class="code hl_class" href="class_kanban.html">Kanban</a> {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <a class="code hl_function" href="class_kanban.html#ab9278bae603137720ec81d085715f71b">Kanban</a>();</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_kanban.html#a07fc4988e4d698cd1436ff6c97b6311f">adicionarTarefa</a>(<a class="code hl_class" href="class_tarefa.html">Tarefa</a>* tarefa);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_kanban.html#a37f2f36cc8466eaf4a24c1d1e344fc53">exibirQuadroKanban</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_kanban.html#a247c1dacbc4c30b219589c01c3a8eae1">moverTarefa</a>(<a class="code hl_class" href="class_tarefa.html">Tarefa</a>* tarefa, <span class="keyword">const</span> std::string&amp; novoStatus);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <a class="code hl_class" href="class_tarefa.html">Tarefa</a>* <a class="code hl_function" href="class_kanban.html#a78368c2a80e3d47f83d130cf8f700be4">encontrarTarefa</a>(<span class="keyword">const</span> std::string&amp; descricao);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_kanban.html#af378da978382d3a598b193ec4ee8de98">ordenarTarefas</a>(std::vector&lt;Tarefa*&gt;&amp; tarefas, <span class="keywordtype">int</span> tipoOrdenacao);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keyword">const</span> std::map&lt;std::string, std::vector&lt;Tarefa*&gt;&gt;&amp; <a class="code hl_function" href="class_kanban.html#ab9868fc761875c6f91c7b67159e750d9">getQuadroKanban</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keywordtype">void</span> merge(std::vector&lt;Tarefa*&gt;&amp; tarefas, <span class="keywordtype">int</span> inicio, <span class="keywordtype">int</span> meio, <span class="keywordtype">int</span> fim);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keywordtype">void</span> mergeSortPorDataEntrega(std::vector&lt;Tarefa*&gt;&amp; tarefas, <span class="keywordtype">int</span> inicio, <span class="keywordtype">int</span> fim);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keywordtype">void</span> quickSortPorOrdemAlfabetica(std::vector&lt;Tarefa*&gt;&amp; tarefas, <span class="keywordtype">int</span> inicio, <span class="keywordtype">int</span> fim);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="keywordtype">int</span> particionarPorOrdemAlfabetica(std::vector&lt;Tarefa*&gt;&amp; tarefas, <span class="keywordtype">int</span> inicio, <span class="keywordtype">int</span> fim);</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="keywordtype">void</span> heapify(std::vector&lt;Tarefa*&gt;&amp; tarefas, <span class="keywordtype">int</span> tamanhoHeap, <span class="keywordtype">int</span> indiceRaiz);</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    <span class="keywordtype">void</span> heapSortPorPrioridade(std::vector&lt;Tarefa*&gt;&amp; tarefas);</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <span class="keywordtype">bool</span> compararDataEntrega(<span class="keyword">const</span> std::string&amp; data1, <span class="keyword">const</span> std::string&amp; data2);</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    std::map&lt;std::string, std::vector&lt;Tarefa*&gt;&gt; quadroKanban; </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>};</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a_tarefa_8h_html"><div class="ttname"><a href="_tarefa_8h.html">Tarefa.h</a></div><div class="ttdoc">Este arquivo contém a declaração da classe Tarefa, que representa uma tarefa com descrição e data de ...</div></div>
+<div class="ttc" id="a_tarefa_basica_8h_html"><div class="ttname"><a href="_tarefa_basica_8h.html">TarefaBasica.h</a></div><div class="ttdoc">Este arquivo contém a definição da classe TarefaBasica, que representa uma tarefa básica derivada da ...</div></div>
+<div class="ttc" id="a_tarefa_importante_8h_html"><div class="ttname"><a href="_tarefa_importante_8h.html">TarefaImportante.h</a></div><div class="ttdoc">Este arquivo contém a definição da classe TarefaImportante, que representa uma tarefa importante deri...</div></div>
+<div class="ttc" id="a_tarefa_urgente_8h_html"><div class="ttname"><a href="_tarefa_urgente_8h.html">TarefaUrgente.h</a></div><div class="ttdoc">Este arquivo contém a definição da classe TarefaUrgente, que representa uma tarefa urgente derivada d...</div></div>
+<div class="ttc" id="aclass_kanban_html"><div class="ttname"><a href="class_kanban.html">Kanban</a></div><div class="ttdoc">Classe que representa um Kanban.</div><div class="ttdef"><b>Definition:</b> Kanban.h:22</div></div>
+<div class="ttc" id="aclass_kanban_html_a07fc4988e4d698cd1436ff6c97b6311f"><div class="ttname"><a href="class_kanban.html#a07fc4988e4d698cd1436ff6c97b6311f">Kanban::adicionarTarefa</a></div><div class="ttdeci">void adicionarTarefa(Tarefa *tarefa)</div><div class="ttdoc">Adiciona uma tarefa ao quadro Kanban.</div><div class="ttdef"><b>Definition:</b> Kanban.cpp:36</div></div>
+<div class="ttc" id="aclass_kanban_html_a247c1dacbc4c30b219589c01c3a8eae1"><div class="ttname"><a href="class_kanban.html#a247c1dacbc4c30b219589c01c3a8eae1">Kanban::moverTarefa</a></div><div class="ttdeci">void moverTarefa(Tarefa *tarefa, const std::string &amp;novoStatus)</div><div class="ttdoc">Move uma tarefa para um novo status no quadro Kanban.</div><div class="ttdef"><b>Definition:</b> Kanban.cpp:80</div></div>
+<div class="ttc" id="aclass_kanban_html_a37f2f36cc8466eaf4a24c1d1e344fc53"><div class="ttname"><a href="class_kanban.html#a37f2f36cc8466eaf4a24c1d1e344fc53">Kanban::exibirQuadroKanban</a></div><div class="ttdeci">void exibirQuadroKanban() const</div><div class="ttdoc">Exibe o quadro Kanban na saída padrão.</div><div class="ttdef"><b>Definition:</b> Kanban.cpp:53</div></div>
+<div class="ttc" id="aclass_kanban_html_a78368c2a80e3d47f83d130cf8f700be4"><div class="ttname"><a href="class_kanban.html#a78368c2a80e3d47f83d130cf8f700be4">Kanban::encontrarTarefa</a></div><div class="ttdeci">Tarefa * encontrarTarefa(const std::string &amp;descricao)</div><div class="ttdoc">Encontra uma tarefa com base na sua descrição.</div><div class="ttdef"><b>Definition:</b> Kanban.cpp:104</div></div>
+<div class="ttc" id="aclass_kanban_html_ab9278bae603137720ec81d085715f71b"><div class="ttname"><a href="class_kanban.html#ab9278bae603137720ec81d085715f71b">Kanban::Kanban</a></div><div class="ttdeci">Kanban()</div><div class="ttdoc">Construtor da classe Kanban.</div><div class="ttdef"><b>Definition:</b> Kanban.cpp:21</div></div>
+<div class="ttc" id="aclass_kanban_html_ab9868fc761875c6f91c7b67159e750d9"><div class="ttname"><a href="class_kanban.html#ab9868fc761875c6f91c7b67159e750d9">Kanban::getQuadroKanban</a></div><div class="ttdeci">const std::map&lt; std::string, std::vector&lt; Tarefa * &gt; &gt; &amp; getQuadroKanban() const</div><div class="ttdoc">Obtém o quadro Kanban.</div><div class="ttdef"><b>Definition:</b> Kanban.cpp:295</div></div>
+<div class="ttc" id="aclass_kanban_html_af378da978382d3a598b193ec4ee8de98"><div class="ttname"><a href="class_kanban.html#af378da978382d3a598b193ec4ee8de98">Kanban::ordenarTarefas</a></div><div class="ttdeci">void ordenarTarefas(std::vector&lt; Tarefa * &gt; &amp;tarefas, int tipoOrdenacao)</div><div class="ttdoc">Ordena um vetor de tarefas de acordo com um tipo de ordenação especificado.</div><div class="ttdef"><b>Definition:</b> Kanban.cpp:273</div></div>
+<div class="ttc" id="aclass_tarefa_html"><div class="ttname"><a href="class_tarefa.html">Tarefa</a></div><div class="ttdoc">Classe base que representa uma tarefa.</div><div class="ttdef"><b>Definition:</b> Tarefa.h:14</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
+</body>
+</html>
