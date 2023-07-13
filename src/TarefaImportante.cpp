@@ -1,3 +1,8 @@
+/**
+ * @file TarefaImportante.cpp
+ *
+ * @brief Este arquivo contém a implementação dos métodos da classe TarefaImportante.
+ */
 #include <iostream>
 #include <string>
 #include <vector>
