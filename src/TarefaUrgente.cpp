@@ -1,3 +1,8 @@
+/**
+ * @file TarefaUrgente.cpp
+ *
+ * @brief Este arquivo contém a implementação dos métodos da classe TarefaUrgente.
+ */
 #include <iostream>
 #include <string>
 #include <vector>
