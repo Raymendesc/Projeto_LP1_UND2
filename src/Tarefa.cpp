@@ -1,3 +1,8 @@
+/**
+ * @file Tarefa.cpp
+ *
+ * @brief Este arquivo contém a implementação da classe Tarefa, que representa uma tarefa com descrição e data de entrega.
+ */
 #include <iostream>
 #include <string>
 #include <vector>
