@@ -1,0 +1,135 @@
+\hypertarget{class_tarefa_importante}{}\doxysection{Referência da Classe Tarefa\+Importante}
+\label{class_tarefa_importante}\index{TarefaImportante@{TarefaImportante}}
+
+
+Classe que representa uma tarefa importante.  
+
+
+
+
+{\ttfamily \#include $<$Tarefa\+Importante.\+h$>$}
+
+Diagrama de hierarquia para Tarefa\+Importante\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_tarefa_importante}
+\end{center}
+\end{figure}
+\doxysubsection*{Membros Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_tarefa_importante_a31ec0480ed79553be342675005ded896}{Tarefa\+Importante}} (const std\+::string \&descricao, const std\+::string \&data\+Entrega)
+\begin{DoxyCompactList}\small\item\em Construtor da classe \mbox{\hyperlink{class_tarefa_importante}{Tarefa\+Importante}}. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_tarefa_importante_a754201d52bd84609fa5b42a67c8a3017}{get\+Tipo}} () const override
+\begin{DoxyCompactList}\small\item\em Obtém o tipo da tarefa. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_tarefa_importante_a3ad88e37e82f95378510503bb3192dce}{atualizar\+Status}} (const std\+::string \&novo\+Status) override
+\begin{DoxyCompactList}\small\item\em Atualiza o status da tarefa importante. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Membros Públicos herdados de \mbox{\hyperlink{class_tarefa}{Tarefa}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_tarefa_accbe18d56080cc1fec1ecb26b36ac60a}{Tarefa}} (const std\+::string \&descricao, const std\+::string \&data\+Entrega)
+\begin{DoxyCompactList}\small\item\em Construtor da classe \mbox{\hyperlink{class_tarefa}{Tarefa}}. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_tarefa_af528a1d8b609a5f4d4b54db9b4308199}{$\sim$\+Tarefa}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor virtual da classe \mbox{\hyperlink{class_tarefa}{Tarefa}}. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_tarefa_a55ac0323625949d76b2bf98cec73f6e1}{get\+Descricao}} () const
+\begin{DoxyCompactList}\small\item\em Obtém a descrição da tarefa. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_tarefa_a19b40a27d9f8bc5ed103be6056deedcb}{get\+Data\+Entrega}} () const
+\begin{DoxyCompactList}\small\item\em Obtém a data de entrega da tarefa. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_tarefa_a49dbdb2d78557d5b5fece7f90ff924da}{get\+Tipo}} () const =0
+\begin{DoxyCompactList}\small\item\em Obtém o tipo da tarefa. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_tarefa_aebc3637e99544f4f64a2b6f45facb160}{atualizar\+Status}} (const std\+::string \&novo\+Status)=0
+\begin{DoxyCompactList}\small\item\em Atualiza o status da tarefa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Classe que representa uma tarefa importante. 
+
+\mbox{\hyperlink{class_tarefa_importante}{Tarefa\+Importante}} é uma classe derivada da classe base \mbox{\hyperlink{class_tarefa}{Tarefa}}. 
+
+\doxysubsection{Construtores e Destrutores}
+\mbox{\Hypertarget{class_tarefa_importante_a31ec0480ed79553be342675005ded896}\label{class_tarefa_importante_a31ec0480ed79553be342675005ded896}} 
+\index{TarefaImportante@{TarefaImportante}!TarefaImportante@{TarefaImportante}}
+\index{TarefaImportante@{TarefaImportante}!TarefaImportante@{TarefaImportante}}
+\doxysubsubsection{\texorpdfstring{TarefaImportante()}{TarefaImportante()}}
+{\footnotesize\ttfamily Tarefa\+Importante\+::\+Tarefa\+Importante (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{descricao,  }\item[{const std\+::string \&}]{data\+Entrega }\end{DoxyParamCaption})}
+
+
+
+Construtor da classe \mbox{\hyperlink{class_tarefa_importante}{Tarefa\+Importante}}. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em descricao} & A descrição da tarefa importante. \\
+\hline
+{\em data\+Entrega} & A data de entrega da tarefa importante. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00021\ :\ \mbox{\hyperlink{class_tarefa}{Tarefa}}(descricao,\ dataEntrega)\ \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentação das funções}
+\mbox{\Hypertarget{class_tarefa_importante_a3ad88e37e82f95378510503bb3192dce}\label{class_tarefa_importante_a3ad88e37e82f95378510503bb3192dce}} 
+\index{TarefaImportante@{TarefaImportante}!atualizarStatus@{atualizarStatus}}
+\index{atualizarStatus@{atualizarStatus}!TarefaImportante@{TarefaImportante}}
+\doxysubsubsection{\texorpdfstring{atualizarStatus()}{atualizarStatus()}}
+{\footnotesize\ttfamily void Tarefa\+Importante\+::atualizar\+Status (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{novo\+Status }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Atualiza o status da tarefa importante. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em novo\+Status} & O novo status da tarefa importante. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Observação}
+Esta função exibe o novo status da tarefa importante. 
+\end{DoxyNote}
+
+
+Implementa \mbox{\hyperlink{class_tarefa_aebc3637e99544f4f64a2b6f45facb160}{Tarefa}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00037\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Atualizando\ status\ da\ Tarefa\ Importante\ para:\ "{}}\ <<\ novoStatus\ <<\ std::endl;}
+\DoxyCodeLine{00038\ \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_tarefa_importante_a754201d52bd84609fa5b42a67c8a3017}\label{class_tarefa_importante_a754201d52bd84609fa5b42a67c8a3017}} 
+\index{TarefaImportante@{TarefaImportante}!getTipo@{getTipo}}
+\index{getTipo@{getTipo}!TarefaImportante@{TarefaImportante}}
+\doxysubsubsection{\texorpdfstring{getTipo()}{getTipo()}}
+{\footnotesize\ttfamily std\+::string Tarefa\+Importante\+::get\+Tipo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Obtém o tipo da tarefa. 
+
+Obtém o tipo da tarefa importante.
+
+\begin{DoxyReturn}{Retorna}
+O tipo da tarefa, que é \char`\"{}\+Tarefa Importante\char`\"{}. 
+\end{DoxyReturn}
+
+
+Implementa \mbox{\hyperlink{class_tarefa_a49dbdb2d78557d5b5fece7f90ff924da}{Tarefa}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}Tarefa\ Importante"{}};}
+\DoxyCodeLine{00029\ \}}
+
+\end{DoxyCode}
+
+
+A documentação para essa classe foi gerada a partir dos seguintes arquivos\+:\begin{DoxyCompactItemize}
+\item 
+Projeto de LP1 (\+Simplify\+Me)/\mbox{\hyperlink{_tarefa_importante_8h}{Tarefa\+Importante.\+h}}\item 
+Projeto de LP1 (\+Simplify\+Me)/\mbox{\hyperlink{_tarefa_importante_8cpp}{Tarefa\+Importante.\+cpp}}\end{DoxyCompactItemize}

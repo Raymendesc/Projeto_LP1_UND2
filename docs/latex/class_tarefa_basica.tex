@@ -1,0 +1,135 @@
+\hypertarget{class_tarefa_basica}{}\doxysection{Referência da Classe Tarefa\+Basica}
+\label{class_tarefa_basica}\index{TarefaBasica@{TarefaBasica}}
+
+
+Classe que representa uma tarefa básica.  
+
+
+
+
+{\ttfamily \#include $<$Tarefa\+Basica.\+h$>$}
+
+Diagrama de hierarquia para Tarefa\+Basica\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_tarefa_basica}
+\end{center}
+\end{figure}
+\doxysubsection*{Membros Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_tarefa_basica_a6cabdaadbc5a1f1d20c9695ef28f93e0}{Tarefa\+Basica}} (const std\+::string \&descricao, const std\+::string \&data\+Entrega)
+\begin{DoxyCompactList}\small\item\em Construtor da classe \mbox{\hyperlink{class_tarefa_basica}{Tarefa\+Basica}}. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_tarefa_basica_a4a2d6276db6c9cc6828d1ae31438dc26}{get\+Tipo}} () const override
+\begin{DoxyCompactList}\small\item\em Obtém o tipo da tarefa. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_tarefa_basica_a83090d09435ef4d40bd6f5849c99bf4a}{atualizar\+Status}} (const std\+::string \&novo\+Status) override
+\begin{DoxyCompactList}\small\item\em Atualiza o status da tarefa básica. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Membros Públicos herdados de \mbox{\hyperlink{class_tarefa}{Tarefa}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_tarefa_accbe18d56080cc1fec1ecb26b36ac60a}{Tarefa}} (const std\+::string \&descricao, const std\+::string \&data\+Entrega)
+\begin{DoxyCompactList}\small\item\em Construtor da classe \mbox{\hyperlink{class_tarefa}{Tarefa}}. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_tarefa_af528a1d8b609a5f4d4b54db9b4308199}{$\sim$\+Tarefa}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor virtual da classe \mbox{\hyperlink{class_tarefa}{Tarefa}}. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_tarefa_a55ac0323625949d76b2bf98cec73f6e1}{get\+Descricao}} () const
+\begin{DoxyCompactList}\small\item\em Obtém a descrição da tarefa. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_tarefa_a19b40a27d9f8bc5ed103be6056deedcb}{get\+Data\+Entrega}} () const
+\begin{DoxyCompactList}\small\item\em Obtém a data de entrega da tarefa. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_tarefa_a49dbdb2d78557d5b5fece7f90ff924da}{get\+Tipo}} () const =0
+\begin{DoxyCompactList}\small\item\em Obtém o tipo da tarefa. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_tarefa_aebc3637e99544f4f64a2b6f45facb160}{atualizar\+Status}} (const std\+::string \&novo\+Status)=0
+\begin{DoxyCompactList}\small\item\em Atualiza o status da tarefa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Classe que representa uma tarefa básica. 
+
+\mbox{\hyperlink{class_tarefa_basica}{Tarefa\+Basica}} é uma classe derivada da classe base \mbox{\hyperlink{class_tarefa}{Tarefa}}. 
+
+\doxysubsection{Construtores e Destrutores}
+\mbox{\Hypertarget{class_tarefa_basica_a6cabdaadbc5a1f1d20c9695ef28f93e0}\label{class_tarefa_basica_a6cabdaadbc5a1f1d20c9695ef28f93e0}} 
+\index{TarefaBasica@{TarefaBasica}!TarefaBasica@{TarefaBasica}}
+\index{TarefaBasica@{TarefaBasica}!TarefaBasica@{TarefaBasica}}
+\doxysubsubsection{\texorpdfstring{TarefaBasica()}{TarefaBasica()}}
+{\footnotesize\ttfamily Tarefa\+Basica\+::\+Tarefa\+Basica (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{descricao,  }\item[{const std\+::string \&}]{data\+Entrega }\end{DoxyParamCaption})}
+
+
+
+Construtor da classe \mbox{\hyperlink{class_tarefa_basica}{Tarefa\+Basica}}. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em descricao} & A descrição da tarefa básica. \\
+\hline
+{\em data\+Entrega} & A data de entrega da tarefa básica. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00021\ :\ \mbox{\hyperlink{class_tarefa}{Tarefa}}(descricao,\ dataEntrega)\ \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentação das funções}
+\mbox{\Hypertarget{class_tarefa_basica_a83090d09435ef4d40bd6f5849c99bf4a}\label{class_tarefa_basica_a83090d09435ef4d40bd6f5849c99bf4a}} 
+\index{TarefaBasica@{TarefaBasica}!atualizarStatus@{atualizarStatus}}
+\index{atualizarStatus@{atualizarStatus}!TarefaBasica@{TarefaBasica}}
+\doxysubsubsection{\texorpdfstring{atualizarStatus()}{atualizarStatus()}}
+{\footnotesize\ttfamily void Tarefa\+Basica\+::atualizar\+Status (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{novo\+Status }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Atualiza o status da tarefa básica. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em novo\+Status} & O novo status da tarefa básica. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Observação}
+Esta função exibe o novo status da tarefa básica. 
+\end{DoxyNote}
+
+
+Implementa \mbox{\hyperlink{class_tarefa_aebc3637e99544f4f64a2b6f45facb160}{Tarefa}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00037\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Atualizando\ status\ da\ Tarefa\ Básica\ para:\ "{}}\ <<\ novoStatus\ <<\ std::endl;}
+\DoxyCodeLine{00038\ \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_tarefa_basica_a4a2d6276db6c9cc6828d1ae31438dc26}\label{class_tarefa_basica_a4a2d6276db6c9cc6828d1ae31438dc26}} 
+\index{TarefaBasica@{TarefaBasica}!getTipo@{getTipo}}
+\index{getTipo@{getTipo}!TarefaBasica@{TarefaBasica}}
+\doxysubsubsection{\texorpdfstring{getTipo()}{getTipo()}}
+{\footnotesize\ttfamily std\+::string Tarefa\+Basica\+::get\+Tipo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Obtém o tipo da tarefa. 
+
+Obtém o tipo da tarefa básica.
+
+\begin{DoxyReturn}{Retorna}
+O tipo da tarefa, que é \char`\"{}\+Tarefa Básica\char`\"{}. 
+\end{DoxyReturn}
+
+
+Implementa \mbox{\hyperlink{class_tarefa_a49dbdb2d78557d5b5fece7f90ff924da}{Tarefa}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}Tarefa\ Básica"{}};}
+\DoxyCodeLine{00029\ \}}
+
+\end{DoxyCode}
+
+
+A documentação para essa classe foi gerada a partir dos seguintes arquivos\+:\begin{DoxyCompactItemize}
+\item 
+Projeto de LP1 (\+Simplify\+Me)/\mbox{\hyperlink{_tarefa_basica_8h}{Tarefa\+Basica.\+h}}\item 
+Projeto de LP1 (\+Simplify\+Me)/\mbox{\hyperlink{_terefa_basica_8cpp}{Terefa\+Basica.\+cpp}}\end{DoxyCompactItemize}

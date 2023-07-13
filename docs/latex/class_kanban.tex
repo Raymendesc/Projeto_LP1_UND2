@@ -1,0 +1,309 @@
+\hypertarget{class_kanban}{}\doxysection{Referência da Classe Kanban}
+\label{class_kanban}\index{Kanban@{Kanban}}
+
+
+Classe que representa um \mbox{\hyperlink{class_kanban}{Kanban}}.  
+
+
+
+
+{\ttfamily \#include $<$Kanban.\+h$>$}
+
+\doxysubsection*{Membros Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_kanban_ab9278bae603137720ec81d085715f71b}{Kanban}} ()
+\begin{DoxyCompactList}\small\item\em Construtor da classe \mbox{\hyperlink{class_kanban}{Kanban}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_kanban_a07fc4988e4d698cd1436ff6c97b6311f}{adicionar\+Tarefa}} (\mbox{\hyperlink{class_tarefa}{Tarefa}} $\ast$tarefa)
+\begin{DoxyCompactList}\small\item\em Adiciona uma tarefa ao quadro \mbox{\hyperlink{class_kanban}{Kanban}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_kanban_a37f2f36cc8466eaf4a24c1d1e344fc53}{exibir\+Quadro\+Kanban}} () const
+\begin{DoxyCompactList}\small\item\em Exibe o quadro \mbox{\hyperlink{class_kanban}{Kanban}} na saída padrão. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_kanban_a247c1dacbc4c30b219589c01c3a8eae1}{mover\+Tarefa}} (\mbox{\hyperlink{class_tarefa}{Tarefa}} $\ast$tarefa, const std\+::string \&novo\+Status)
+\begin{DoxyCompactList}\small\item\em Move uma tarefa para um novo status no quadro \mbox{\hyperlink{class_kanban}{Kanban}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_tarefa}{Tarefa}} $\ast$ \mbox{\hyperlink{class_kanban_a78368c2a80e3d47f83d130cf8f700be4}{encontrar\+Tarefa}} (const std\+::string \&descricao)
+\begin{DoxyCompactList}\small\item\em Encontra uma tarefa com base na sua descrição. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_kanban_af378da978382d3a598b193ec4ee8de98}{ordenar\+Tarefas}} (std\+::vector$<$ \mbox{\hyperlink{class_tarefa}{Tarefa}} $\ast$ $>$ \&tarefas, int tipo\+Ordenacao)
+\begin{DoxyCompactList}\small\item\em Ordena um vetor de tarefas de acordo com um tipo de ordenação especificado. \end{DoxyCompactList}\item 
+const std\+::map$<$ std\+::string, std\+::vector$<$ \mbox{\hyperlink{class_tarefa}{Tarefa}} $\ast$ $>$ $>$ \& \mbox{\hyperlink{class_kanban_ab9868fc761875c6f91c7b67159e750d9}{get\+Quadro\+Kanban}} () const
+\begin{DoxyCompactList}\small\item\em Obtém o quadro \mbox{\hyperlink{class_kanban}{Kanban}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Classe que representa um \mbox{\hyperlink{class_kanban}{Kanban}}. 
+
+\mbox{\hyperlink{class_kanban}{Kanban}} é responsável por gerenciar um quadro \mbox{\hyperlink{class_kanban}{Kanban}} com tarefas. 
+
+\doxysubsection{Construtores e Destrutores}
+\mbox{\Hypertarget{class_kanban_ab9278bae603137720ec81d085715f71b}\label{class_kanban_ab9278bae603137720ec81d085715f71b}} 
+\index{Kanban@{Kanban}!Kanban@{Kanban}}
+\index{Kanban@{Kanban}!Kanban@{Kanban}}
+\doxysubsubsection{\texorpdfstring{Kanban()}{Kanban()}}
+{\footnotesize\ttfamily Kanban\+::\+Kanban (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construtor da classe \mbox{\hyperlink{class_kanban}{Kanban}}. 
+
+Inicializa o quadro \mbox{\hyperlink{class_kanban}{Kanban}} com as colunas padrão\+: Backlog, Em Análise, Fazendo, Testando e Entregue. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00022\ \ \ \ \ quadroKanban\ =\ \{}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Backlog"{}},\ std::vector<Tarefa*>()\},}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Em\ Análise"{}},\ std::vector<Tarefa*>()\},}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Fazendo"{}},\ std::vector<Tarefa*>()\},}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Testando"{}},\ std::vector<Tarefa*>()\},}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Entregue"{}},\ std::vector<Tarefa*>()\}}
+\DoxyCodeLine{00028\ \ \ \ \ \};}
+\DoxyCodeLine{00029\ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentação das funções}
+\mbox{\Hypertarget{class_kanban_a07fc4988e4d698cd1436ff6c97b6311f}\label{class_kanban_a07fc4988e4d698cd1436ff6c97b6311f}} 
+\index{Kanban@{Kanban}!adicionarTarefa@{adicionarTarefa}}
+\index{adicionarTarefa@{adicionarTarefa}!Kanban@{Kanban}}
+\doxysubsubsection{\texorpdfstring{adicionarTarefa()}{adicionarTarefa()}}
+{\footnotesize\ttfamily void Kanban\+::adicionar\+Tarefa (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tarefa}{Tarefa}} $\ast$}]{tarefa }\end{DoxyParamCaption})}
+
+
+
+Adiciona uma tarefa ao quadro \mbox{\hyperlink{class_kanban}{Kanban}}. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em tarefa} & Um ponteiro para a tarefa a ser adicionada.\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em tarefa} & Ponteiro para a tarefa a ser adicionada. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00037\ \ \ \ \ quadroKanban[\textcolor{stringliteral}{"{}Backlog"{}}].push\_back(tarefa);}
+\DoxyCodeLine{00038\ \ \ \ \ std::ofstream\ arquivo;}
+\DoxyCodeLine{00039\ \ \ \ \ arquivo.open(\textcolor{stringliteral}{"{}tarefas.txt"{}},\ std::ios::app);}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordflow}{if}\ (arquivo.is\_open())\ \{}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ std::string\ texto\ =\ tarefa-\/>\mbox{\hyperlink{class_tarefa_a55ac0323625949d76b2bf98cec73f6e1}{getDescricao}}()\ +\ \textcolor{stringliteral}{"{},"{}}\ +\ tarefa-\/>\mbox{\hyperlink{class_tarefa_a49dbdb2d78557d5b5fece7f90ff924da}{getTipo}}()\ +\ \textcolor{stringliteral}{"{},"{}}\ +\ tarefa-\/>\mbox{\hyperlink{class_tarefa_a19b40a27d9f8bc5ed103be6056deedcb}{getDataEntrega}}()\ +\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ arquivo\ <<\ texto;}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ arquivo.close();\ \textcolor{comment}{//\ Fechar\ o\ arquivo\ após\ escrever\ nele}}
+\DoxyCodeLine{00044\ \ \ \ \ \}}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Erro\ ao\ abrir!"{}};}
+\DoxyCodeLine{00047\ \ \ \ \ \}}
+\DoxyCodeLine{00048\ \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_kanban_a78368c2a80e3d47f83d130cf8f700be4}\label{class_kanban_a78368c2a80e3d47f83d130cf8f700be4}} 
+\index{Kanban@{Kanban}!encontrarTarefa@{encontrarTarefa}}
+\index{encontrarTarefa@{encontrarTarefa}!Kanban@{Kanban}}
+\doxysubsubsection{\texorpdfstring{encontrarTarefa()}{encontrarTarefa()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_tarefa}{Tarefa}} $\ast$ Kanban\+::encontrar\+Tarefa (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{descricao }\end{DoxyParamCaption})}
+
+
+
+Encontra uma tarefa com base na sua descrição. 
+
+Encontra uma tarefa com base na descrição.
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em descricao} & A descrição da tarefa a ser encontrada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Um ponteiro para a tarefa encontrada, ou nullptr se não encontrada.
+\end{DoxyReturn}
+
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em descricao} & Descrição da tarefa a ser encontrada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Ponteiro para a tarefa encontrada. Retorna nullptr se a tarefa não for encontrada. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00105\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\&\ listaTarefas\ :\ quadroKanban)\ \{}
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\&\ tarefa\ :\ listaTarefas.second)\ \{}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (tarefa-\/>getDescricao()\ ==\ descricao)\ \{}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ tarefa;}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00111\ \ \ \ \ \}}
+\DoxyCodeLine{00112\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00113\ \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_kanban_a37f2f36cc8466eaf4a24c1d1e344fc53}\label{class_kanban_a37f2f36cc8466eaf4a24c1d1e344fc53}} 
+\index{Kanban@{Kanban}!exibirQuadroKanban@{exibirQuadroKanban}}
+\index{exibirQuadroKanban@{exibirQuadroKanban}!Kanban@{Kanban}}
+\doxysubsubsection{\texorpdfstring{exibirQuadroKanban()}{exibirQuadroKanban()}}
+{\footnotesize\ttfamily void Kanban\+::exibir\+Quadro\+Kanban (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Exibe o quadro \mbox{\hyperlink{class_kanban}{Kanban}} na saída padrão. 
+
+Exibe o quadro \mbox{\hyperlink{class_kanban}{Kanban}} com as tarefas em cada coluna. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00054\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}=====\ Quadro\ Kanban\ ====="{}}\ <<\ std::endl;}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Backlog:"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ \textcolor{keyword}{auto}\&\ tarefa\ :\ quadroKanban.at(\textcolor{stringliteral}{"{}Backlog"{}}))\ \{}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}-\/\ "{}}\ <<\ tarefa-\/>getTipo()\ <<\ \textcolor{stringliteral}{"{}:\ "{}}\ <<\ tarefa-\/>getDescricao()\ <<\ \textcolor{stringliteral}{"{}\ (Data\ de\ Entrega:\ "{}}\ <<\ tarefa-\/>getDataEntrega()\ <<\ \textcolor{stringliteral}{"{})"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00059\ \ \ \ \ \}}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Em\ Análise:"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ \textcolor{keyword}{auto}\&\ tarefa\ :\ quadroKanban.at(\textcolor{stringliteral}{"{}Em\ Análise"{}}))\ \{}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}-\/\ "{}}\ <<\ tarefa-\/>getTipo()\ <<\ \textcolor{stringliteral}{"{}:\ "{}}\ <<\ tarefa-\/>getDescricao()\ <<\ \textcolor{stringliteral}{"{}\ (Data\ de\ Entrega:\ "{}}\ <<\ tarefa-\/>getDataEntrega()\ <<\ \textcolor{stringliteral}{"{})"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00064\ \ \ \ \ \}}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ \textcolor{keyword}{auto}\&\ status\ :\ \{\textcolor{stringliteral}{"{}Fazendo"{}},\ \textcolor{stringliteral}{"{}Testando"{}},\ \textcolor{stringliteral}{"{}Entregue"{}}\})\ \{}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ std::cout\ <<\ status\ <<\ \textcolor{stringliteral}{"{}:"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ \textcolor{keyword}{auto}\&\ tarefa\ :\ quadroKanban.at(status))\ \{}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}-\/\ "{}}\ <<\ tarefa-\/>getTipo()\ <<\ \textcolor{stringliteral}{"{}:\ "{}}\ <<\ tarefa-\/>getDescricao()\ <<\ \textcolor{stringliteral}{"{}\ (Data\ de\ Entrega:\ "{}}\ <<\ tarefa-\/>getDataEntrega()\ <<\ \textcolor{stringliteral}{"{})"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00071\ \ \ \ \ \}}
+\DoxyCodeLine{00072\ \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_kanban_ab9868fc761875c6f91c7b67159e750d9}\label{class_kanban_ab9868fc761875c6f91c7b67159e750d9}} 
+\index{Kanban@{Kanban}!getQuadroKanban@{getQuadroKanban}}
+\index{getQuadroKanban@{getQuadroKanban}!Kanban@{Kanban}}
+\doxysubsubsection{\texorpdfstring{getQuadroKanban()}{getQuadroKanban()}}
+{\footnotesize\ttfamily const std\+::map$<$ std\+::string, std\+::vector$<$ \mbox{\hyperlink{class_tarefa}{Tarefa}} $\ast$ $>$ $>$ \& Kanban\+::get\+Quadro\+Kanban (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtém o quadro \mbox{\hyperlink{class_kanban}{Kanban}}. 
+
+Obtém o quadro \mbox{\hyperlink{class_kanban}{Kanban}} atual.
+
+\begin{DoxyReturn}{Retorna}
+Um mapa contendo o quadro \mbox{\hyperlink{class_kanban}{Kanban}} com os status e suas respectivas tarefas.
+\end{DoxyReturn}
+
+
+\begin{DoxyReturn}{Retorna}
+Mapa contendo o quadro \mbox{\hyperlink{class_kanban}{Kanban}} com as colunas e suas respectivas listas de tarefas. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00295\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00296\ \ \ \ \ \textcolor{keywordflow}{return}\ quadroKanban;}
+\DoxyCodeLine{00297\ \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_kanban_a247c1dacbc4c30b219589c01c3a8eae1}\label{class_kanban_a247c1dacbc4c30b219589c01c3a8eae1}} 
+\index{Kanban@{Kanban}!moverTarefa@{moverTarefa}}
+\index{moverTarefa@{moverTarefa}!Kanban@{Kanban}}
+\doxysubsubsection{\texorpdfstring{moverTarefa()}{moverTarefa()}}
+{\footnotesize\ttfamily void Kanban\+::mover\+Tarefa (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tarefa}{Tarefa}} $\ast$}]{tarefa,  }\item[{const std\+::string \&}]{novo\+Status }\end{DoxyParamCaption})}
+
+
+
+Move uma tarefa para um novo status no quadro \mbox{\hyperlink{class_kanban}{Kanban}}. 
+
+Move uma tarefa para uma nova coluna do quadro \mbox{\hyperlink{class_kanban}{Kanban}}.
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em tarefa} & Um ponteiro para a tarefa a ser movida. \\
+\hline
+{\em novo\+Status} & O novo status da tarefa.\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em tarefa} & Ponteiro para a tarefa a ser movida. \\
+\hline
+{\em novo\+Status} & Novo status/coluna da tarefa. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keywordflow}{if}\ (quadroKanban.find(novoStatus)\ !=\ quadroKanban.end())\ \{}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\&\ listaTarefas\ :\ quadroKanban)\ \{}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\&\ listaTarefasAtual\ =\ listaTarefas.second;}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ it\ =\ std::find(listaTarefasAtual.begin(),\ listaTarefasAtual.end(),\ tarefa);}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (it\ !=\ listaTarefasAtual.end())\ \{}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ listaTarefasAtual.erase(it);}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ quadroKanban[novoStatus].push\_back(tarefa);}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ tarefa-\/>\mbox{\hyperlink{class_tarefa_aebc3637e99544f4f64a2b6f45facb160}{atualizarStatus}}(novoStatus);}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00092\ \ \ \ \ \}}
+\DoxyCodeLine{00093\ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Status\ inválido!"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00095\ \ \ \ \ \}}
+\DoxyCodeLine{00096\ \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_kanban_af378da978382d3a598b193ec4ee8de98}\label{class_kanban_af378da978382d3a598b193ec4ee8de98}} 
+\index{Kanban@{Kanban}!ordenarTarefas@{ordenarTarefas}}
+\index{ordenarTarefas@{ordenarTarefas}!Kanban@{Kanban}}
+\doxysubsubsection{\texorpdfstring{ordenarTarefas()}{ordenarTarefas()}}
+{\footnotesize\ttfamily void Kanban\+::ordenar\+Tarefas (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_tarefa}{Tarefa}} $\ast$ $>$ \&}]{tarefas,  }\item[{int}]{tipo\+Ordenacao }\end{DoxyParamCaption})}
+
+
+
+Ordena um vetor de tarefas de acordo com um tipo de ordenação especificado. 
+
+Ordena um vetor de tarefas de acordo com o tipo de ordenação especificado.
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em tarefas} & O vetor de tarefas a ser ordenado. \\
+\hline
+{\em tipo\+Ordenacao} & O tipo de ordenação (1 -\/ Data de Entrega, 2 -\/ Ordem Alfabética, 3 -\/ Prioridade).\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em tarefas} & Vetor de tarefas a ser ordenado. \\
+\hline
+{\em tipo\+Ordenacao} & Tipo de ordenação\+: 1 para ordenar por data de entrega, 2 por ordem alfabética da descrição, 3 por prioridade. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00273\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00274\ \ \ \ \ \textcolor{keywordflow}{switch}\ (tipoOrdenacao)\ \{}
+\DoxyCodeLine{00275\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 1:}
+\DoxyCodeLine{00276\ \ \ \ \ \ \ \ \ \ \ \ \ mergeSortPorDataEntrega(tarefas,\ 0,\ tarefas.size()\ -\/\ 1);}
+\DoxyCodeLine{00277\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00278\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 2:}
+\DoxyCodeLine{00279\ \ \ \ \ \ \ \ \ \ \ \ \ quickSortPorOrdemAlfabetica(tarefas,\ 0,\ tarefas.size()\ -\/\ 1);}
+\DoxyCodeLine{00280\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00281\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 3:}
+\DoxyCodeLine{00282\ \ \ \ \ \ \ \ \ \ \ \ \ heapSortPorPrioridade(tarefas);}
+\DoxyCodeLine{00283\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00284\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{00285\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Opção\ inválida!"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00286\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00287\ \ \ \ \ \}}
+\DoxyCodeLine{00288\ \}}
+
+\end{DoxyCode}
+
+
+A documentação para essa classe foi gerada a partir dos seguintes arquivos\+:\begin{DoxyCompactItemize}
+\item 
+Projeto de LP1 (\+Simplify\+Me)/\mbox{\hyperlink{_kanban_8h}{Kanban.\+h}}\item 
+Projeto de LP1 (\+Simplify\+Me)/\mbox{\hyperlink{_kanban_8cpp}{Kanban.\+cpp}}\end{DoxyCompactItemize}

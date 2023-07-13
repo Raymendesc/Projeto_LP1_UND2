@@ -1,0 +1,54 @@
+\hypertarget{_kanban_8h_source}{}\doxysection{Kanban.\+h}
+\label{_kanban_8h_source}\index{Projeto de LP1 (SimplifyMe)/Kanban.h@{Projeto de LP1 (SimplifyMe)/Kanban.h}}
+\mbox{\hyperlink{_kanban_8h}{Vá para a documentação desse arquivo.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ KANBAN\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ KANBAN\_H}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_tarefa_8h}{Tarefa.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_tarefa_basica_8h}{TarefaBasica.h}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_tarefa_importante_8h}{TarefaImportante.h}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_tarefa_urgente_8h}{TarefaUrgente.h}}"{}}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_kanban}{Kanban}}\ \{}
+\DoxyCodeLine{00023\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{class_kanban_ab9278bae603137720ec81d085715f71b}{Kanban}}();}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_kanban_a07fc4988e4d698cd1436ff6c97b6311f}{adicionarTarefa}}(\mbox{\hyperlink{class_tarefa}{Tarefa}}*\ tarefa);}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_kanban_a37f2f36cc8466eaf4a24c1d1e344fc53}{exibirQuadroKanban}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_kanban_a247c1dacbc4c30b219589c01c3a8eae1}{moverTarefa}}(\mbox{\hyperlink{class_tarefa}{Tarefa}}*\ tarefa,\ \textcolor{keyword}{const}\ std::string\&\ novoStatus);}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00052\ \ \ \ \ \mbox{\hyperlink{class_tarefa}{Tarefa}}*\ \mbox{\hyperlink{class_kanban_a78368c2a80e3d47f83d130cf8f700be4}{encontrarTarefa}}(\textcolor{keyword}{const}\ std::string\&\ descricao);}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_kanban_af378da978382d3a598b193ec4ee8de98}{ordenarTarefas}}(std::vector<Tarefa*>\&\ tarefas,\ \textcolor{keywordtype}{int}\ tipoOrdenacao);}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keyword}{const}\ std::map<std::string,\ std::vector<Tarefa*>>\&\ \mbox{\hyperlink{class_kanban_ab9868fc761875c6f91c7b67159e750d9}{getQuadroKanban}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keywordtype}{void}\ merge(std::vector<Tarefa*>\&\ tarefas,\ \textcolor{keywordtype}{int}\ inicio,\ \textcolor{keywordtype}{int}\ meio,\ \textcolor{keywordtype}{int}\ fim);}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keywordtype}{void}\ mergeSortPorDataEntrega(std::vector<Tarefa*>\&\ tarefas,\ \textcolor{keywordtype}{int}\ inicio,\ \textcolor{keywordtype}{int}\ fim);}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{keywordtype}{void}\ quickSortPorOrdemAlfabetica(std::vector<Tarefa*>\&\ tarefas,\ \textcolor{keywordtype}{int}\ inicio,\ \textcolor{keywordtype}{int}\ fim);}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keywordtype}{int}\ particionarPorOrdemAlfabetica(std::vector<Tarefa*>\&\ tarefas,\ \textcolor{keywordtype}{int}\ inicio,\ \textcolor{keywordtype}{int}\ fim);}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00108\ \ \ \ \ \textcolor{keywordtype}{void}\ heapify(std::vector<Tarefa*>\&\ tarefas,\ \textcolor{keywordtype}{int}\ tamanhoHeap,\ \textcolor{keywordtype}{int}\ indiceRaiz);}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00114\ \ \ \ \ \textcolor{keywordtype}{void}\ heapSortPorPrioridade(std::vector<Tarefa*>\&\ tarefas);}
+\DoxyCodeLine{00115\ }
+\DoxyCodeLine{00122\ \ \ \ \ \textcolor{keywordtype}{bool}\ compararDataEntrega(\textcolor{keyword}{const}\ std::string\&\ data1,\ \textcolor{keyword}{const}\ std::string\&\ data2);}
+\DoxyCodeLine{00123\ }
+\DoxyCodeLine{00124\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00125\ \ \ \ \ std::map<std::string,\ std::vector<Tarefa*>>\ quadroKanban;\ }
+\DoxyCodeLine{00126\ \};}
+\DoxyCodeLine{00127\ }
+\DoxyCodeLine{00128\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

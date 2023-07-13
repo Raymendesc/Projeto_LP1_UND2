@@ -1,0 +1,166 @@
+\hypertarget{class_tarefa}{}\doxysection{Referência da Classe Tarefa}
+\label{class_tarefa}\index{Tarefa@{Tarefa}}
+
+
+Classe base que representa uma tarefa.  
+
+
+
+
+{\ttfamily \#include $<$Tarefa.\+h$>$}
+
+Diagrama de hierarquia para Tarefa\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_tarefa}
+\end{center}
+\end{figure}
+\doxysubsection*{Membros Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_tarefa_accbe18d56080cc1fec1ecb26b36ac60a}{Tarefa}} (const std\+::string \&descricao, const std\+::string \&data\+Entrega)
+\begin{DoxyCompactList}\small\item\em Construtor da classe \mbox{\hyperlink{class_tarefa}{Tarefa}}. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_tarefa_af528a1d8b609a5f4d4b54db9b4308199}{$\sim$\+Tarefa}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor virtual da classe \mbox{\hyperlink{class_tarefa}{Tarefa}}. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_tarefa_a55ac0323625949d76b2bf98cec73f6e1}{get\+Descricao}} () const
+\begin{DoxyCompactList}\small\item\em Obtém a descrição da tarefa. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_tarefa_a19b40a27d9f8bc5ed103be6056deedcb}{get\+Data\+Entrega}} () const
+\begin{DoxyCompactList}\small\item\em Obtém a data de entrega da tarefa. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_tarefa_a49dbdb2d78557d5b5fece7f90ff924da}{get\+Tipo}} () const =0
+\begin{DoxyCompactList}\small\item\em Obtém o tipo da tarefa. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_tarefa_aebc3637e99544f4f64a2b6f45facb160}{atualizar\+Status}} (const std\+::string \&novo\+Status)=0
+\begin{DoxyCompactList}\small\item\em Atualiza o status da tarefa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Classe base que representa uma tarefa. 
+
+\doxysubsection{Construtores e Destrutores}
+\mbox{\Hypertarget{class_tarefa_accbe18d56080cc1fec1ecb26b36ac60a}\label{class_tarefa_accbe18d56080cc1fec1ecb26b36ac60a}} 
+\index{Tarefa@{Tarefa}!Tarefa@{Tarefa}}
+\index{Tarefa@{Tarefa}!Tarefa@{Tarefa}}
+\doxysubsubsection{\texorpdfstring{Tarefa()}{Tarefa()}}
+{\footnotesize\ttfamily Tarefa\+::\+Tarefa (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{descricao,  }\item[{const std\+::string \&}]{data\+Entrega }\end{DoxyParamCaption})}
+
+
+
+Construtor da classe \mbox{\hyperlink{class_tarefa}{Tarefa}}. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em descricao} & A descrição da tarefa. \\
+\hline
+{\em data\+Entrega} & A data de entrega da tarefa. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00021\ :\ descricao(descricao),\ dataEntrega(dataEntrega)\ \{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_tarefa_af528a1d8b609a5f4d4b54db9b4308199}\label{class_tarefa_af528a1d8b609a5f4d4b54db9b4308199}} 
+\index{Tarefa@{Tarefa}!````~Tarefa@{$\sim$Tarefa}}
+\index{````~Tarefa@{$\sim$Tarefa}!Tarefa@{Tarefa}}
+\doxysubsubsection{\texorpdfstring{$\sim$Tarefa()}{~Tarefa()}}
+{\footnotesize\ttfamily virtual Tarefa\+::$\sim$\+Tarefa (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Destrutor virtual da classe \mbox{\hyperlink{class_tarefa}{Tarefa}}. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00026\ \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentação das funções}
+\mbox{\Hypertarget{class_tarefa_aebc3637e99544f4f64a2b6f45facb160}\label{class_tarefa_aebc3637e99544f4f64a2b6f45facb160}} 
+\index{Tarefa@{Tarefa}!atualizarStatus@{atualizarStatus}}
+\index{atualizarStatus@{atualizarStatus}!Tarefa@{Tarefa}}
+\doxysubsubsection{\texorpdfstring{atualizarStatus()}{atualizarStatus()}}
+{\footnotesize\ttfamily virtual void Tarefa\+::atualizar\+Status (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{novo\+Status }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Atualiza o status da tarefa. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em novo\+Status} & O novo status da tarefa. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Observação}
+Esta é uma função virtual pura a ser implementada pelas classes derivadas. 
+\end{DoxyNote}
+
+
+Implementado por \mbox{\hyperlink{class_tarefa_basica_a83090d09435ef4d40bd6f5849c99bf4a}{Tarefa\+Basica}}, \mbox{\hyperlink{class_tarefa_importante_a3ad88e37e82f95378510503bb3192dce}{Tarefa\+Importante}} e \mbox{\hyperlink{class_tarefa_urgente_a38906745d5b6937eb0a500042e16e26c}{Tarefa\+Urgente}}.
+
+\mbox{\Hypertarget{class_tarefa_a19b40a27d9f8bc5ed103be6056deedcb}\label{class_tarefa_a19b40a27d9f8bc5ed103be6056deedcb}} 
+\index{Tarefa@{Tarefa}!getDataEntrega@{getDataEntrega}}
+\index{getDataEntrega@{getDataEntrega}!Tarefa@{Tarefa}}
+\doxysubsubsection{\texorpdfstring{getDataEntrega()}{getDataEntrega()}}
+{\footnotesize\ttfamily std\+::string Tarefa\+::get\+Data\+Entrega (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtém a data de entrega da tarefa. 
+
+\begin{DoxyReturn}{Retorna}
+A data de entrega da tarefa. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordflow}{return}\ dataEntrega;}
+\DoxyCodeLine{00037\ \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_tarefa_a55ac0323625949d76b2bf98cec73f6e1}\label{class_tarefa_a55ac0323625949d76b2bf98cec73f6e1}} 
+\index{Tarefa@{Tarefa}!getDescricao@{getDescricao}}
+\index{getDescricao@{getDescricao}!Tarefa@{Tarefa}}
+\doxysubsubsection{\texorpdfstring{getDescricao()}{getDescricao()}}
+{\footnotesize\ttfamily std\+::string Tarefa\+::get\+Descricao (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtém a descrição da tarefa. 
+
+\begin{DoxyReturn}{Retorna}
+A descrição da tarefa. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordflow}{return}\ descricao;}
+\DoxyCodeLine{00029\ \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_tarefa_a49dbdb2d78557d5b5fece7f90ff924da}\label{class_tarefa_a49dbdb2d78557d5b5fece7f90ff924da}} 
+\index{Tarefa@{Tarefa}!getTipo@{getTipo}}
+\index{getTipo@{getTipo}!Tarefa@{Tarefa}}
+\doxysubsubsection{\texorpdfstring{getTipo()}{getTipo()}}
+{\footnotesize\ttfamily virtual std\+::string Tarefa\+::get\+Tipo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Obtém o tipo da tarefa. 
+
+\begin{DoxyReturn}{Retorna}
+O tipo da tarefa. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Observação}
+Esta é uma função virtual pura a ser implementada pelas classes derivadas. 
+\end{DoxyNote}
+
+
+Implementado por \mbox{\hyperlink{class_tarefa_basica_a4a2d6276db6c9cc6828d1ae31438dc26}{Tarefa\+Basica}}, \mbox{\hyperlink{class_tarefa_importante_a754201d52bd84609fa5b42a67c8a3017}{Tarefa\+Importante}} e \mbox{\hyperlink{class_tarefa_urgente_a470a6e42bf8eccf1b3cdda0b75631fa2}{Tarefa\+Urgente}}.
+
+
+
+A documentação para essa classe foi gerada a partir dos seguintes arquivos\+:\begin{DoxyCompactItemize}
+\item 
+Projeto de LP1 (\+Simplify\+Me)/\mbox{\hyperlink{_tarefa_8h}{Tarefa.\+h}}\item 
+Projeto de LP1 (\+Simplify\+Me)/\mbox{\hyperlink{_tarefa_8cpp}{Tarefa.\+cpp}}\end{DoxyCompactItemize}
