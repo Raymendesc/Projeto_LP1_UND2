@@ -5,7 +5,7 @@ LDFLAGS =
 SRCDIR = src
 INCDIR = include
 BUILDDIR = build
-TARGET = kaban
+TARGET = bin/kaban
 
 SRCEXT = cpp
 SOURCES = $(shell find $(SRCDIR) -type f -name *.$(SRCEXT))
